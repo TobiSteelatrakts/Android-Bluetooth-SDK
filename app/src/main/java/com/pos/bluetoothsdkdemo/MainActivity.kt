@@ -48,11 +48,11 @@ private var bluetoothEnabled by mutableStateOf(false)
                 enabled: Boolean
             ) {
                 bluetoothEnabled = enabled;
-                println("SDK says Bluetooth: $enabled")
+                println("SDK says the Bluetooth: $enabled")
             }
         }
 //        bluetoothManager.startMonitoring(
-//            bluetoothCallback
+//            bluetoothCallback   
 //        )
         BluetoothSDK.startMonitoring(
             bluetoothCallback
